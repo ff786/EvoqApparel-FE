@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* Sidebar Overlay */}
       {sideBar && (
         <div
-          className="fixed inset-0 bg-background/70 z-20"
+          className="fixed inset-0 backdrop-blur-xs bg-background/20 z-20"
           onClick={toggleSidebar}
         ></div>
       )}

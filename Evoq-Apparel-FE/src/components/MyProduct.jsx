@@ -1,46 +1,13 @@
 import React from "react";
 import tshirt1 from "../assets/thshirt1.jpeg";
-import person1 from "../assets/person1.jpeg";
-import person2 from "../assets/person2.jpeg";
-import person3 from "../assets/person3.jpeg";
-import person4 from "../assets/person4.jpeg";
 
-const products = [
-  {
-    id: 1,
-    name: "Product 1",
-    description: "This is the description for Product 1.",
-    image: person1,
-    color: "Sand",
-    price: "400",
-  },
-  {
-    id: 2,
-    name: "Product 2",
-    description: "This is the description for Product 2.",
-    image: person2,
-    color: "Sand",
-    price: "400",
-  },
-  {
-    id: 3,
-    name: "Product 3",
-    description: "This is the description for Product 3.",
-    image: person3,
-    color: "Sand",
-    price: "400",
-  },
-  {
-    id: 4,
-    name: "Product 4",
-    description: "This is the description for Product 4.",
-    image: person4,
-    color: "Sand",
-    price: "400",
-  },
-];
+import { useNavigate } from "react-router-dom";
+import { products } from "../assets/products";
+
+
 
 const MyProduct = () => {
+    const navigate = useNavigate()
   return (
     <div className="px-4 sm:px-20 lg:px-32 py-32">
       {/* Title */}
@@ -99,7 +66,7 @@ const MyProduct = () => {
       {/* Display All Items */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
         {products.map((item, index) => (
-          <div key={index} className="relative cursor-pointer group">
+          <div key={index} onClick={()=>navigate(`/products/${item.id}`)} className="relative cursor-pointer group">
             <img src={item.image} alt="Evoc Product" />
             <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-4 text-white transition">
             <div className=" bg-white/80 flex items-center justify-center w-full h-full">
