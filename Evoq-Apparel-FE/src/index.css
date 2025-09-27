@@ -3,7 +3,9 @@
 @import "tailwindcss";
 
 @theme{
-    --font-stylishFont: "Quintessential", serif
+    --font-stylishFont: "Quintessential", serif;
+    --color-primary: #493628;
+    --color-background: #f5f5dc;
 }
 
 html, body{
