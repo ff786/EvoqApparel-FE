@@ -1,5 +1,5 @@
 import React from 'react'
-import evoqLogo from '../assets/evoq-white.PNG'
+import evoqLogo from '../../assets/evoq-white.PNG'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {

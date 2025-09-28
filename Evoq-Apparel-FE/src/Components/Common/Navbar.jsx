@@ -2,7 +2,7 @@ import React from 'react'
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RiUser3Fill } from "react-icons/ri";
 import { FaShoppingBag } from "react-icons/fa";
-import evoqLogo from '../assets/evoq-brown.png'
+import evoqLogo from '../../assets/evoq-brown.PNG'
 import { useNavigate } from 'react-router-dom';
 
 
