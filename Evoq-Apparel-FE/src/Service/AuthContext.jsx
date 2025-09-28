@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
 
     // Load user from localStorage on first render
     useEffect(() => {
-        const storedUser = localStorage.getItem('track-tidy_user');
+        const storedUser = localStorage.getItem('evoq-apparel_user');
         if (storedUser) {
             setUser(JSON.parse(storedUser));
         }
@@ -15,12 +15,12 @@ export const AuthProvider = ({ children }) => {
 
     const login = (userData) => {
         setUser(userData);
-        localStorage.setItem('track-tidy_user', JSON.stringify(userData));
+        localStorage.setItem('evoq-apparel_user', JSON.stringify(userData));
     };
 
     const logout = () => {
         setUser(null);
-        localStorage.removeItem('track-tidy_user');
+        localStorage.removeItem('evoq-apparel_user');
     };
 
     return (
