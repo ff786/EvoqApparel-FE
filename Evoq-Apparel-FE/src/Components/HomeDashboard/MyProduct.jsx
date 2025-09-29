@@ -1,8 +1,8 @@
 import React from "react";
-import tshirt1 from "../assets/thshirt1.jpeg";
+import tshirt1 from "../../assets/thshirt1.jpeg";
 
 import { useNavigate } from "react-router-dom";
-import { products } from "../assets/products";
+import { products } from "../../assets/products";
 
 
 
